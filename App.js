@@ -35,7 +35,6 @@ const TextComponent = (props) => {
   const onTap = () => {
     setCount(count+1)
   }
-  a
   return (
     <View style={props.style}>
       <Text style={styles.text}>
