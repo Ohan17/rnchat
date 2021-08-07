@@ -37,7 +37,7 @@ const TextComponent = (props) => {
   }
   return (
     <View style={props.style}>
-      <Text style={styles.text}>
+      <Text style={props.textStyle}>
         Total Tap: {count}
       </Text>
       <TouchableOpacity onPress={onTap} style={styles.roundButton}>
@@ -53,15 +53,12 @@ const TextComponent = (props) => {
 const App = () => {
   return (
     <View>
-      <TextComponent style={{alignItems: 'center'}}/> 
+      <TextComponent style={{alignItems: 'center'}} textStyle={{margin: 10, fontSize: 24}}/> 
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  text: {
-    margin: 10,
-  },
   roundButton: {
     width: 50,
     height: 50,
